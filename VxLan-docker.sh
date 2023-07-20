@@ -10,6 +10,9 @@ echo -e "\n ############ Installing docker ############ \n"
 apt update
 apt install docker.io
 
+## CIDR calculator
+apt-get install sipcalc
+
 # if [[ "${?}" -ne 0 ]]
 # then
 #     echo -e "Docker installetion unsuccessful"

@@ -101,3 +101,26 @@ apt-get install net-tools
 apt-get install iputils-ping
 apt-get install tcpdump
 exit
+
+
+# 10.1.1.20/24
+# vxlan-net
+
+# 10.1.1.30
+# node_01
+
+# vxlan-demo
+# 100
+# 10.0.1.20
+
+
+
+# 10.1.1.22/24
+# vxlan-net
+
+# 10.1.1.40
+# node_02
+
+# vxlan-demo
+# 100
+# 10.0.1.10

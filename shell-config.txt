@@ -7,6 +7,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 USER_NAME=$(whoami)
 H_NAME=$(hostname)
 IP_ADDRESS=$(ifconfig | grep -C 1  enp0s8 | grep inet | awk '{print $2}')
-FIRST="${USER_NAME}-${H_NAME}"
-FINAL="${FIRST}-${IP_ADDRESS}"
+FINAL="${USER_NAME}-${H_NAME}-${IP_ADDRESS}"
 PS1=$(echo -e "\033[1;32m${FINAL} ==> \033[0m")

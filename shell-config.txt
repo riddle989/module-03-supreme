@@ -1,0 +1,12 @@
+apt install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+### Change bash propt. Add this to the end of ~/.bashrc file. And for root user add this to the ~/root/.bashrc in the sudo mode
+USER_NAME=$(whoami)
+H_NAME=$(hostname)
+IP_ADDRESS=$(ifconfig | grep -C 1  enp0s8 | grep inet | awk '{print $2}')
+FIRST="${USER_NAME}-${H_NAME}"
+FINAL="${FIRST}-${IP_ADDRESS}"
+PS1=$(echo -e "\033[1;32m${FINAL} ==> \033[0m")

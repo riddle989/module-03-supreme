@@ -51,7 +51,7 @@ ip link add vxlan-demo type vxlan id 100 remote 10.0.1.20 dstport 4789 dev enp0s
 ip a | grep vxlan
 ip link set vxlan-demo up
 
-brctl addif br-9516 vxlan-demo
+brctl addif br-39135d3292468fd9c1ed5f64db96e5e33ced9f76da996ba5a28a8a33c3e45618 vxlan-demo
 route -n
 # VM-1 #
 
@@ -60,7 +60,7 @@ ip link add vxlan-demo type vxlan id 100 remote 10.0.1.10 dstport 4789 dev enp0s
 ip a | grep vxlan
 ip link set vxlan-demo up
 
-brctl addif br-9516 vxlan-demo
+brctl addif br-ad42af96b1c84948ddf0d03dc717999154a05752f364fef29ef2393ea70eca08 vxlan-demo
 route -
 # VM-2 #
 ### Create Vxlan and set up ###

@@ -99,11 +99,11 @@ echo -e "\n ############ Get into Doker Container & Installing network tools ###
 
 
 docker exec -it "${CONTAINER_ID}" bash
-apt-get update
-apt-get install net-tools
-apt-get install iputils-ping
-apt-get install tcpdump
-exit
+# apt-get update
+# apt-get install net-tools
+# apt-get install iputils-ping
+# apt-get install tcpdump
+# exit
 
 
 # 10.1.1.20/24

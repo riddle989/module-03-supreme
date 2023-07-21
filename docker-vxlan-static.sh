@@ -61,7 +61,7 @@ ip a | grep vxlan
 ip link set vxlan-demo up
 
 brctl addif br-ad42af96b1c84948ddf0d03dc717999154a05752f364fef29ef2393ea70eca08 vxlan-demo
-route -
+route -n
 # VM-2 #
 ### Create Vxlan and set up ###
 
